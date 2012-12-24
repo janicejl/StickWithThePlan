@@ -4,3 +4,40 @@
 *.jar
 *.war
 *.ear
+
+
+# Ignore bundler config
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+
+
+# OS generated files #
+######################
+Thumbs.db
+Desktop.ini
+.DS_Store
+.Trashes
+.Trash
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs #
+########
+*.log
+*.ctxt
