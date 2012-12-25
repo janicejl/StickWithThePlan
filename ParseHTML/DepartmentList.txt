@@ -1,0 +1,27 @@
+
+https://catalogue.usc.edu/schools/
+
+.. I started with the architect school...
+... the list is under courses of instruction under each department/school
+.. I've done all the departments under Architecture, Business and Accounting, and Cinematic Arts. .. stopped at dornsife. 
+
+https://catalogue.usc.edu/schools/architecture/courses/
+https://catalogue.usc.edu/schools/business/courses/buad-2/
+https://catalogue.usc.edu/schools/business/courses/baep/
+https://catalogue.usc.edu/schools/business/courses/business-communication/
+https://catalogue.usc.edu/schools/business/courses/fbe/
+https://catalogue.usc.edu/schools/business/courses/fim/
+https://catalogue.usc.edu/schools/business/courses/gsba/
+https://catalogue.usc.edu/schools/business/courses/iom/
+https://catalogue.usc.edu/schools/business/courses/library-and-information-management/
+https://catalogue.usc.edu/schools/business/courses/mor/
+https://catalogue.usc.edu/schools/business/courses/mkt/
+https://catalogue.usc.edu/schools/accounting/courses/
+https://catalogue.usc.edu/schools/cinema/courses/
+https://catalogue.usc.edu/schools/cinema/courses-ctan/
+https://catalogue.usc.edu/schools/cinema/courses-ctcs/
+https://catalogue.usc.edu/schools/cinema/courses-ctin/
+https://catalogue.usc.edu/schools/cinema/courses-ctpr/
+https://catalogue.usc.edu/schools/cinema/courses-ctwr/
+https://catalogue.usc.edu/schools/cinema/courses-cmpp/
+https://catalogue.usc.edu/schools/cinema/courses-iml/
