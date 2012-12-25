@@ -6,9 +6,14 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintStream;
+
 import java.util.ArrayList;
 import java.util.Scanner;
+
 
 import USC.Course;
 
@@ -16,6 +21,11 @@ public class CourseList {
 	public static void main (String[] args) {
 		
 		//"https://catalogue.usc.edu/schools/engineering/computer-science/courses/"
+		//https://catalogue.usc.edu/schools/college/math/courses/
+		//https://catalogue.usc.edu/schools/architecture/courses/
+		//https://catalogue.usc.edu/schools/business/courses/buad-2/
+		
+		
 
 		//CSCI200, CSCI511, CSCI 477ab
 		
@@ -51,7 +61,7 @@ public class CourseList {
 		Elements course  = doc.select("p");
 		Elements courseID = doc.select("b");
 		
-		String code;
+		String code = "";
 		String number;
 		String name;
 		int units;
@@ -59,6 +69,8 @@ public class CourseList {
 		Boolean spring;
 		Boolean summer;
 		Boolean fall;
+		
+		ArrayList<Course> deptList = new ArrayList<Course>();
 		
 		for (int k = 2; k < course.size(); k++) {
 			code = "";
@@ -147,8 +159,22 @@ public class CourseList {
 			System.out.println("Offered in Spring: " + spring);
 			System.out.println("Offered in Summer: " + summer);
 			System.out.println("Offered in Fall: " + fall);
+			
+			deptList.add(new Course(code, number, name, units, description, spring, summer, fall));
 		}
 		
-		System.out.println("Finished parsing... File outputted to ###NONEXISTENT ATM##");
+		try {
+			PrintStream out = new PrintStream(new FileOutputStream(code + ".txt"));
+			
+			for (Course c: deptList) {
+				out.println(c.getCode() + "|" + c.getNumber() + "|" + c.getName() + "|" + c.getUnits());
+			}
+			
+			out.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println("Finished parsing... File outputted to " + code + ".txt");
 	}
 }
