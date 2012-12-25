@@ -72,7 +72,8 @@ public class CourseList {
 		
 		ArrayList<Course> deptList = new ArrayList<Course>();
 		
-		for (int k = 2; k < course.size(); k++) {
+		for(Element src : course) {
+		//for (int k = 2; k < course.size(); k++) {
 			code = "";
 			number = "";
 			name = "";
@@ -82,7 +83,7 @@ public class CourseList {
 			summer = false;
 			fall = false;
 			
-			Element src = course.get(k);
+			//Element src = course.get(k);
 			
 			System.out.println(src.text());
 			
@@ -90,6 +91,7 @@ public class CourseList {
 			
 			String[] split = c.split(" ");
 			
+			if (split[0].toUpperCase().equals(split[0])) {
 			for (int i = 0; i < split.length; i++) {
 				if (i == 0) {
 					code = split[0];
@@ -163,6 +165,7 @@ public class CourseList {
 			deptList.add(new Course(code, number, name, units, description, spring, summer, fall));
 		}
 		
+		}	
 		try {
 			PrintStream out = new PrintStream(new FileOutputStream(code + ".txt"));
 			
