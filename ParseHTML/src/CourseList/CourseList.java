@@ -231,6 +231,8 @@ public class CourseList {
 												springA = true; 
 											} else if (semTimes == 1) {
 												springB = true;
+											} else {
+												errorList.add(c);
 											}
 											
 											semTimes++;
@@ -241,6 +243,8 @@ public class CourseList {
 												summerA = true; 
 											} else if (semTimes == 1) {
 												summerB = true;
+											} else {
+												errorList.add(c);
 											}
 											
 											semTimes++;
@@ -251,6 +255,8 @@ public class CourseList {
 												fallA = true; 
 											} else if (semTimes == 1) {
 												fallB = true;
+											} else {
+												errorList.add(c);
 											}
 											
 											semTimes++;
@@ -262,6 +268,8 @@ public class CourseList {
 												springA = true; 
 											} else if (semTimes == 1) {
 												springB = true;
+											} else {
+												errorList.add(c);
 											}
 											
 											semTimes++;
@@ -272,6 +280,8 @@ public class CourseList {
 												summerA = true; 
 											} else if (semTimes == 1) {
 												summerB = true;
+											} else {
+												errorList.add(c);
 											}
 											
 											semTimes++;
@@ -282,6 +292,8 @@ public class CourseList {
 												fallA = true; 
 											} else if (semTimes == 1) {
 												fallB = true;
+											} else {
+												errorList.add(c);
 											}
 											
 											semTimes++;
