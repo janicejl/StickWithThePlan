@@ -73,24 +73,41 @@ public class CourseList {
 		//for ab, abc, abcd etc courses;
 		
 		Boolean ab;
-//		Boolean abc;
-//		Boolean abcd;
+		Boolean abc;
+		Boolean abcd;
+		Boolean abz;
+		Boolean abcdz;
+		
 		String numberA;
+		int unitsA;
 		Boolean springA;
 		Boolean summerA;
 		Boolean fallA;
+		
 		String numberB;
+		int unitsB;
 		Boolean springB;
 		Boolean summerB;
 		Boolean fallB;
-//		String numberC;
-//		Boolean springC;
-//		Boolean summerC;
-//		Boolean fallC;
-//		String numberD;
-//		Boolean springD;
-//		Boolean summerD;
-//		Boolean fallD;
+		
+		String numberC;
+		int unitsC;
+		Boolean springC;
+		Boolean summerC;
+		Boolean fallC;
+		
+		String numberD;
+		int unitsD;
+		Boolean springD;
+		Boolean summerD;
+		Boolean fallD;
+		
+		String numberZ;
+		int unitsZ;
+		Boolean springZ;
+		Boolean summerZ;
+		Boolean fallZ;
+		
 
 		ArrayList<Course> deptList = new ArrayList<Course>();
 		ArrayList<String> errorList = new ArrayList<String>();
@@ -107,24 +124,40 @@ public class CourseList {
 			fall = false;
 
 			ab = false;
-//			abc = false;
-//			abcd = false;
+			abc = false;
+			abcd = false;
+			abz = false;
+			abcdz = false;
+			
 			numberA = "";
+			unitsA = 0;
 			springA = false;
 			summerA = false;
-			numberB = "";
 			fallA = false;
+			
+			numberB = "";
+			unitsB = 0;
 			springB = false;
 			summerB = false;
 			fallB = false;
-//			numberC = "";
-//			springC = false;
-//			summerC = false;
-//			fallC = false;
-//			numberD = "";
-//			springD = false;
-//			summerD = false;
-//			fallD = false;
+			
+			numberC = "";
+			unitsC = 0;
+			springC = false;
+			summerC = false;
+			fallC = false;
+			
+			numberD = "";
+			unitsD = 0;
+			springD = false;
+			summerD = false;
+			fallD = false;
+			
+			numberZ = "";
+			unitsZ = 0;
+			springZ = false;
+			summerZ = false;
+			fallZ = false;
 			
 			//Element src = course.get(k);
 
@@ -142,42 +175,185 @@ public class CourseList {
 						} else if (i == 1) {
 							number = split [1];
 							
-							if (number.contains("ab") == true) {
+							if (number.contains("abcdz") == true) {
+								abcdz = true;
+							} else if (number.contains("abcd") == true) {
+								abcd = true;
+							} else if (number.contains("abc") == true) {
+								System.err.println("!!##abc not supported!!");
+								errorList.add(c);
+							} else if (number.contains("abz") == true) {
+								abz = true;
+							} else if (number.contains("ab") == true) {
 								ab = true;
-								
-								for (int j = 0; j < number.length(); j++) {
-									if (number.charAt(j) == 'a') {
-										numberA = numberA + number.charAt(j);
-									} else if (number.charAt(j) == 'b') {
-										numberB = numberB + number.charAt(j);
-									} else {
-										numberA = numberA + number.charAt(j);
-										numberB = numberB + number.charAt(j);
-									}
+							}
+							
+							for (int j = 0; j < number.length(); j++) {
+								if (number.charAt(j) == 'a') {
+									numberA = numberA + number.charAt(j);
+								} else if (number.charAt(j) == 'b') {
+									numberB = numberB + number.charAt(j);
+								} else if (number.charAt(j) == 'c') {
+									numberC = numberC + number.charAt(j);
+								} else if (number.charAt(j) == 'd') {
+									numberD = numberD + number.charAt(j);
+								} else if (number.charAt(j) == 'z') {
+									numberZ = numberZ + number.charAt(j);
+								}else {
+									numberA = numberA + number.charAt(j);
+									numberB = numberB + number.charAt(j);
+									numberC = numberC + number.charAt(j);
+									numberD = numberD + number.charAt(j);
+									numberZ = numberZ + number.charAt(j);
 								}
 							}
 							
 						} else if (i == 2) {
-							while (split[i].charAt(0) != '('
-									|| (split[i].charAt(1) != '0'
-									&& split[i].charAt(1) != '1'
-									&& split[i].charAt(1) != '2'
-									&& split[i].charAt(1) != '3'
-									&& split[i].charAt(1) != '4'
-									&& split[i].charAt(1) != '5'
-									&& split[i].charAt(1) != '6'
-									&& split[i].charAt(1) != '7'
-									&& split[i].charAt(1) != '8'
-									&& split[i].charAt(1) != '9')) {
-								name = name + " " + split[i];
-								i++;
-								
-								if (split[i].equals("(a:")) {
-									break;
+							name = name + split[i];
+							i++;
+							if (split[i].equals("(a:") == false) {
+								while (split[i].charAt(0) != '('
+										|| (split[i].charAt(1) != '0'
+										&& split[i].charAt(1) != '1'
+										&& split[i].charAt(1) != '2'
+										&& split[i].charAt(1) != '3'
+										&& split[i].charAt(1) != '4'
+										&& split[i].charAt(1) != '5'
+										&& split[i].charAt(1) != '6'
+										&& split[i].charAt(1) != '7'
+										&& split[i].charAt(1) != '8'
+										&& split[i].charAt(1) != '9')) {
+									name = name + " " + split[i];
+									i++;
+
+									if (split[i].equals("(a:")) {
+										break;
+									}
 								}
 							}
 
-							if (split[i].charAt(2) == ')' && split[i].length() == 3) {
+							if (split[i].contains("-") && split[i].length() == 11 && abcdz == true ) {
+								unitsA = Integer.parseInt(""+split[i].charAt(1));
+								unitsB = Integer.parseInt(""+split[i].charAt(3));
+								unitsC = Integer.parseInt(""+split[i].charAt(5));
+								unitsD = Integer.parseInt(""+split[i].charAt(7));
+								unitsZ = Integer.parseInt(""+split[i].charAt(9));
+								
+
+								if (split[i].charAt(split[i].length()-1) == ')') {
+									continue;
+								}
+								i++;
+								
+								if (split[i].contains("Sp") == true) {
+									spring = true;
+									springA = true;
+									springB = true;
+									springC = true;
+									springD = true;
+									springZ = true;
+								}
+								if (split[i].contains("Sm") == true) {
+									summer = true;
+									summerA = true;
+									summerB = true;
+									summerC = true;
+									summerD = true;
+									summerZ = true;
+								} 
+								if (split[i].contains("Fa") == true) {
+									fall = true;
+									fallA = true;
+									fallB = true;
+									fallC = true;
+									fallD = true;
+									fallZ = true;
+								}
+							} else if (split[i].contains("-") && split[i].length() == 9 && abcd == true ) {
+								unitsA = Integer.parseInt(""+split[i].charAt(1));
+								unitsB = Integer.parseInt(""+split[i].charAt(3));
+								unitsC = Integer.parseInt(""+split[i].charAt(5));
+								unitsD = Integer.parseInt(""+split[i].charAt(7));
+
+								if (split[i].charAt(split[i].length()-1) == ')') {
+									continue;
+								}
+								i++;
+								
+								if (split[i].contains("Sp") == true) {
+									spring = true;
+									springA = true;
+									springB = true;
+									springC = true;
+									springD = true;
+								}
+								if (split[i].contains("Sm") == true) {
+									summer = true;
+									summerA = true;
+									summerB = true;
+									summerC = true;
+									summerD = true;
+								} 
+								if (split[i].contains("Fa") == true) {
+									fall = true;
+									fallA = true;
+									fallB = true;
+									fallC = true;
+									fallD = true;
+								}
+							} else if (split[i].contains("-") && split[i].length() == 7 && abz == true ) {
+								unitsA = Integer.parseInt(""+split[i].charAt(1));
+								unitsB = Integer.parseInt(""+split[i].charAt(3));
+								unitsZ = Integer.parseInt(""+split[i].charAt(5));
+
+								if (split[i].charAt(split[i].length()-1) == ')') {
+									continue;
+								}
+								i++;
+								
+								if (split[i].contains("Sp") == true) {
+									spring = true;
+									springA = true;
+									springB = true;
+									springZ = true;
+								}
+								if (split[i].contains("Sm") == true) {
+									summer = true;
+									summerA = true;
+									summerB = true;
+									summerZ = true;
+								} 
+								if (split[i].contains("Fa") == true) {
+									fall = true;
+									fallA = true;
+									fallB = true;
+									fallZ = true;
+								}
+							} else if (split[i].contains("-") && split[i].length() == 5 && ab == true ) {
+								unitsA = Integer.parseInt(""+split[i].charAt(1));
+								unitsB = Integer.parseInt(""+split[i].charAt(3));
+
+								if (split[i].charAt(split[i].length()-1) == ')') {
+									continue;
+								}
+								i++;
+								
+								if (split[i].contains("Sp") == true) {
+									spring = true;
+									springA = true;
+									springB = true;
+								}
+								if (split[i].contains("Sm") == true) {
+									summer = true;
+									summerA = true;
+									summerB = true;
+								} 
+								if (split[i].contains("Fa") == true) {
+									fall = true;
+									fallA = true;
+									fallB = true;
+								}
+							} else if (split[i].charAt(2) == ')' && split[i].length() == 3) {
 								units = Integer.parseInt(""+split[i].charAt(1));
 								//i++;
 							} else if (split[i].charAt(2) == ',' && split[i].length() == 3) {
@@ -201,12 +377,29 @@ public class CourseList {
 
 								if (split[i].contains("Sp") == true) {
 									spring = true;
+									
+									springA = true;
+									springB = true;
+									springC = true;
+									springD = true;
+									springZ = true;
 								}
 								if (split[i].contains("Sm") == true) {
 									summer = true;
+									
+									summerA = true;
+									summerB = true;
+									summerC = true;
+									summerD = true;
+									summerZ = true;
 								} 
 								if (split[i].contains("Fa") == true) {
 									fall = true;
+									fallA = true;
+									fallB = true;
+									fallC = true;
+									fallD = true;
+									fallZ = true;
 								}
 								//i++;
 							} else if (split[i].equals("(a:")) { 
@@ -320,16 +513,105 @@ public class CourseList {
 								i++;
 							}
 						} else {
+							//Adding the main description. 
 							description = description + " " + split[i];
 						}
 					}
 
-					if (ab == true ) {
+					if (abcdz == true) {
+						System.out.println("Code: " + code);
+						System.out.println("NumberA: " + numberA);
+						System.out.println("NumberB: " + numberB);
+						System.out.println("NumberC: " + numberC);
+						System.out.println("NumberD: " + numberD);
+						System.out.println("NumberZ: " + numberZ);
+						System.out.println("Name: " + name);
+						System.out.println("UnitsA: " + unitsA);
+						System.out.println("UnitsB: " + unitsB);
+						System.out.println("UnitsC: " + unitsC);
+						System.out.println("UnitsD: " + unitsD);
+						System.out.println("UnitsZ: " + unitsZ);
+						System.out.println("Description: " + description);
+						System.out.println("Offered in SpringA: " + springA);
+						System.out.println("Offered in SummerA: " + summerA);
+						System.out.println("Offered in FallA: " + fallA);
+						System.out.println("Offered in SpringB: " + springB);
+						System.out.println("Offered in SummerB: " + summerB);
+						System.out.println("Offered in FallB: " + fallB);
+						System.out.println("Offered in SpringC: " + springC);
+						System.out.println("Offered in SummerC: " + summerC);
+						System.out.println("Offered in FallC: " + fallC);
+						System.out.println("Offered in SpringD: " + springD);
+						System.out.println("Offered in SummerD: " + summerD);
+						System.out.println("Offered in FallD: " + fallD);
+						System.out.println("Offered in SpringZ: " + springZ);
+						System.out.println("Offered in SummerZ: " + summerZ);
+						System.out.println("Offered in FallZ: " + fallZ);
+						
+						deptList.add(new Course(code, numberA, name, unitsA, description, springA, summerA, fallA));
+						deptList.add(new Course(code, numberB, name, unitsB, description, springB, summerB, fallB));
+						deptList.add(new Course(code, numberC, name, unitsC, description, springC, summerC, fallC));
+						deptList.add(new Course(code, numberD, name, unitsD, description, springD, summerD, fallD));
+						deptList.add(new Course(code, numberZ, name, unitsZ, description, springZ, summerZ, fallZ));
+					} else if (abcd == true) {
+						System.out.println("Code: " + code);
+						System.out.println("NumberA: " + numberA);
+						System.out.println("NumberB: " + numberB);
+						System.out.println("NumberC: " + numberC);
+						System.out.println("NumberD: " + numberD);
+						System.out.println("Name: " + name);
+						System.out.println("UnitsA: " + unitsA);
+						System.out.println("UnitsB: " + unitsB);
+						System.out.println("UnitsC: " + unitsC);
+						System.out.println("UnitsD: " + unitsD);
+						System.out.println("Description: " + description);
+						System.out.println("Offered in SpringA: " + springA);
+						System.out.println("Offered in SummerA: " + summerA);
+						System.out.println("Offered in FallA: " + fallA);
+						System.out.println("Offered in SpringB: " + springB);
+						System.out.println("Offered in SummerB: " + summerB);
+						System.out.println("Offered in FallB: " + fallB);
+						System.out.println("Offered in SpringC: " + springC);
+						System.out.println("Offered in SummerC: " + summerC);
+						System.out.println("Offered in FallC: " + fallC);
+						System.out.println("Offered in SpringD: " + springD);
+						System.out.println("Offered in SummerD: " + summerD);
+						System.out.println("Offered in FallD: " + fallD);
+						
+						deptList.add(new Course(code, numberA, name, unitsA, description, springA, summerA, fallA));
+						deptList.add(new Course(code, numberB, name, unitsB, description, springB, summerB, fallB));
+						deptList.add(new Course(code, numberC, name, unitsC, description, springC, summerC, fallC));
+						deptList.add(new Course(code, numberD, name, unitsD, description, springD, summerD, fallD));
+					} else if (abz == true) {
+						System.out.println("Code: " + code);
+						System.out.println("NumberA: " + numberA);
+						System.out.println("NumberB: " + numberB);
+						System.out.println("NumberZ: " + numberZ);
+						System.out.println("Name: " + name);
+						System.out.println("UnitsA: " + unitsA);
+						System.out.println("UnitsB: " + unitsB);
+						System.out.println("UnitsZ: " + unitsZ);
+						System.out.println("Description: " + description);
+						System.out.println("Offered in SpringA: " + springA);
+						System.out.println("Offered in SummerA: " + summerA);
+						System.out.println("Offered in FallA: " + fallA);
+						System.out.println("Offered in SpringB: " + springB);
+						System.out.println("Offered in SummerB: " + summerB);
+						System.out.println("Offered in FallB: " + fallB);
+						System.out.println("Offered in SpringZ: " + springZ);
+						System.out.println("Offered in SummerZ: " + summerZ);
+						System.out.println("Offered in FallZ: " + fallZ);
+						
+						deptList.add(new Course(code, numberA, name, unitsA, description, springA, summerA, fallA));
+						deptList.add(new Course(code, numberB, name, unitsB, description, springB, summerB, fallB));
+						deptList.add(new Course(code, numberZ, name, unitsZ, description, springZ, summerZ, fallZ));
+					} else if (ab == true ) {
 						System.out.println("Code: " + code);
 						System.out.println("NumberA: " + numberA);
 						System.out.println("NumberB: " + numberB);
 						System.out.println("Name: " + name);
-						System.out.println("Units: " + units);
+						System.out.println("UnitsA: " + unitsA);
+						System.out.println("UnitsB: " + unitsB);
 						System.out.println("Description: " + description);
 						System.out.println("Offered in SpringA: " + springA);
 						System.out.println("Offered in SummerA: " + summerA);
@@ -338,8 +620,8 @@ public class CourseList {
 						System.out.println("Offered in SummerB: " + summerB);
 						System.out.println("Offered in FallB: " + fallB);
 
-						deptList.add(new Course(code, numberA, name, units, description, springA, summerA, fallA));
-						deptList.add(new Course(code, numberB, name, units, description, springB, summerB, fallB));
+						deptList.add(new Course(code, numberA, name, unitsA, description, springA, summerA, fallA));
+						deptList.add(new Course(code, numberB, name, unitsB, description, springB, summerB, fallB));
 					
 					} else {
 						System.out.println("Code: " + code);
