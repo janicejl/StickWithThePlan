@@ -4,10 +4,15 @@ import java.util.*;
 
 public class Course {
 	
-	String code;
+	String dept;
 	String number;
+	String code;
 	String name;
 	int units;
+	
+	int maxUnits; 
+	//For classes with a range of units and a maximum allowed units. 
+	//If there is no range, the max units should be the same as the units. 
 	
 	String description;
 	
@@ -21,12 +26,15 @@ public class Course {
 	//int[] offered; 	
 	// Spring = 1, Summer = 2, Fall = 3
 	
-	public Course(String _code, String _number, String _name, int _units, String desc, Boolean sp, Boolean sm, Boolean fa) {
-		code = _code;
+	public Course(String _dept, String _number, String _name, int _units, int max, String desc, Boolean sp, Boolean sm, Boolean fa) {
+		dept = _dept;
 		number = _number;
+		code = dept + " " + number;
 		name = _name;
 		units = _units;
 		description = desc;
+		
+		maxUnits = max;
 		
 		prerequisites = new ArrayList<Course>();
 		corequisites = new ArrayList<Course>();
@@ -36,12 +44,12 @@ public class Course {
 		fall = fa;
 	}
 
-	public String getCode() {
+	public String getDept() {
 		return code;
 	}
 
-	public void setCode(String code) {
-		this.code = code;
+	public void setDept(String dept) {
+		this.dept = dept;
 	}
 
 	public String getNumber() {

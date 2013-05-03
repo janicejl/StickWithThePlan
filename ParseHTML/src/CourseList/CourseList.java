@@ -6,6 +6,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -20,7 +21,7 @@ import USC.Course;
 public class CourseList {
 	public static void main (String[] args) {
 
-		//"https://catalogue.usc.edu/schools/engineering/computer-science/courses/"
+		//https://catalogue.usc.edu/schools/engineering/computer-science/courses/
 		//https://catalogue.usc.edu/schools/college/math/courses/
 		//https://catalogue.usc.edu/schools/architecture/courses/
 		//https://catalogue.usc.edu/schools/business/courses/buad-2/
@@ -46,10 +47,15 @@ public class CourseList {
 	public static void parseDepartment(String url) {
 		Document doc = null;
 
+		//IF NO INTERNET
+		File input = new File("tmp/csci.html");
+		
 		System.out.println("Opening...");
 
 		try {
-			doc = Jsoup.connect(url).get();
+			//doc = Jsoup.connect(url).get();
+			//IF NO INTERNET
+			doc = Jsoup.parse(input, "UTF-8", "");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -59,16 +65,18 @@ public class CourseList {
 		System.out.println("Parsing...");
 
 		Elements course  = doc.select("p");
-		Elements courseID = doc.select("b");
 
-		String code = "";
-		String number;
-		String name;
-		int units;
-		String description;
-		Boolean spring;
-		Boolean summer;
-		Boolean fall;
+		String code = "";		// for full course code (example CSCI 101)
+		String dept = "";		// department name (example CSCI)
+		String number;			// course number (example 101)
+		String name;			// example (Fundamentals of Computer Programming)
+		int units;				// number of units
+		String description;		// Description for the course
+		Boolean spring;			// if offered in spring
+		Boolean summer;			// if offered in summer
+		Boolean fall;			// if offered in fall
+		
+		int maxUnits;
 		
 		//for ab, abc, abcd etc courses;
 		
@@ -115,7 +123,7 @@ public class CourseList {
 
 		for(Element src : course) {
 			//for (int k = 2; k < course.size(); k++) {
-			code = "";
+			dept = "";
 			number = "";
 			name = "";
 			units = 0;
@@ -123,6 +131,8 @@ public class CourseList {
 			spring = false;
 			summer = false;
 			fall = false;
+			
+			maxUnits = 0;
 
 			ab = false;
 			abc = false;
@@ -173,7 +183,7 @@ public class CourseList {
 				if (split[0].toUpperCase().equals(split[0])) {
 					for (int i = 0; i < split.length; i++) {
 						if (i == 0) {
-							code = split[0];
+							dept = split[0];
 						} else if (i == 1) {
 							number = split [1];
 							
@@ -549,8 +559,15 @@ public class CourseList {
 						}
 					}
 
+					
+					if (units == 0) {
+						System.err.println(c);
+						errorList.add(c);
+					}
+					
+					
 					if (abcdz == true) {
-						System.out.println("Code: " + code);
+						System.out.println("Code: " + dept);
 						System.out.println("NumberA: " + numberA);
 						System.out.println("NumberB: " + numberB);
 						System.out.println("NumberC: " + numberC);
@@ -562,6 +579,7 @@ public class CourseList {
 						System.out.println("UnitsC: " + unitsC);
 						System.out.println("UnitsD: " + unitsD);
 						System.out.println("UnitsZ: " + unitsZ);
+						System.out.println("Max Units: " + maxUnits);
 						System.out.println("Description: " + description);
 						System.out.println("Offered in SpringA: " + springA);
 						System.out.println("Offered in SummerA: " + summerA);
@@ -579,13 +597,13 @@ public class CourseList {
 						System.out.println("Offered in SummerZ: " + summerZ);
 						System.out.println("Offered in FallZ: " + fallZ);
 						
-						deptList.add(new Course(code, numberA, name, unitsA, description, springA, summerA, fallA));
-						deptList.add(new Course(code, numberB, name, unitsB, description, springB, summerB, fallB));
-						deptList.add(new Course(code, numberC, name, unitsC, description, springC, summerC, fallC));
-						deptList.add(new Course(code, numberD, name, unitsD, description, springD, summerD, fallD));
-						deptList.add(new Course(code, numberZ, name, unitsZ, description, springZ, summerZ, fallZ));
+						deptList.add(new Course(dept, numberA, name, unitsA, maxUnits, description, springA, summerA, fallA));
+						deptList.add(new Course(dept, numberB, name, unitsB, maxUnits, description, springB, summerB, fallB));
+						deptList.add(new Course(dept, numberC, name, unitsC, maxUnits, description, springC, summerC, fallC));
+						deptList.add(new Course(dept, numberD, name, unitsD, maxUnits, description, springD, summerD, fallD));
+						deptList.add(new Course(dept, numberZ, name, unitsZ, maxUnits, description, springZ, summerZ, fallZ));
 					} else if (abcd == true) {
-						System.out.println("Code: " + code);
+						System.out.println("Code: " + dept);
 						System.out.println("NumberA: " + numberA);
 						System.out.println("NumberB: " + numberB);
 						System.out.println("NumberC: " + numberC);
@@ -595,6 +613,7 @@ public class CourseList {
 						System.out.println("UnitsB: " + unitsB);
 						System.out.println("UnitsC: " + unitsC);
 						System.out.println("UnitsD: " + unitsD);
+						System.out.println("Max Units: " + maxUnits);
 						System.out.println("Description: " + description);
 						System.out.println("Offered in SpringA: " + springA);
 						System.out.println("Offered in SummerA: " + summerA);
@@ -609,12 +628,12 @@ public class CourseList {
 						System.out.println("Offered in SummerD: " + summerD);
 						System.out.println("Offered in FallD: " + fallD);
 						
-						deptList.add(new Course(code, numberA, name, unitsA, description, springA, summerA, fallA));
-						deptList.add(new Course(code, numberB, name, unitsB, description, springB, summerB, fallB));
-						deptList.add(new Course(code, numberC, name, unitsC, description, springC, summerC, fallC));
-						deptList.add(new Course(code, numberD, name, unitsD, description, springD, summerD, fallD));
+						deptList.add(new Course(dept, numberA, name, unitsA, maxUnits, description, springA, summerA, fallA));
+						deptList.add(new Course(dept, numberB, name, unitsB, maxUnits, description, springB, summerB, fallB));
+						deptList.add(new Course(dept, numberC, name, unitsC, maxUnits, description, springC, summerC, fallC));
+						deptList.add(new Course(dept, numberD, name, unitsD, maxUnits, description, springD, summerD, fallD));
 					} else if (abcz == true) {
-						System.out.println("Code: " + code);
+						System.out.println("Code: " + dept);
 						System.out.println("NumberA: " + numberA);
 						System.out.println("NumberB: " + numberB);
 						System.out.println("NumberC: " + numberC);
@@ -624,6 +643,7 @@ public class CourseList {
 						System.out.println("UnitsB: " + unitsB);
 						System.out.println("UnitsC: " + unitsC);
 						System.out.println("UnitsZ: " + unitsZ);
+						System.out.println("Max Units: " + maxUnits);
 						System.out.println("Description: " + description);
 						System.out.println("Offered in SpringA: " + springA);
 						System.out.println("Offered in SummerA: " + summerA);
@@ -638,12 +658,12 @@ public class CourseList {
 						System.out.println("Offered in SummerZ: " + summerZ);
 						System.out.println("Offered in FallZ: " + fallZ);
 						
-						deptList.add(new Course(code, numberA, name, unitsA, description, springA, summerA, fallA));
-						deptList.add(new Course(code, numberB, name, unitsB, description, springB, summerB, fallB));
-						deptList.add(new Course(code, numberC, name, unitsC, description, springC, summerC, fallC));
-						deptList.add(new Course(code, numberZ, name, unitsZ, description, springZ, summerZ, fallZ));
+						deptList.add(new Course(dept, numberA, name, unitsA, maxUnits, description, springA, summerA, fallA));
+						deptList.add(new Course(dept, numberB, name, unitsB, maxUnits, description, springB, summerB, fallB));
+						deptList.add(new Course(dept, numberC, name, unitsC, maxUnits, description, springC, summerC, fallC));
+						deptList.add(new Course(dept, numberZ, name, unitsZ, maxUnits, description, springZ, summerZ, fallZ));
 					} else if (abc == true) {
-						System.out.println("Code: " + code);
+						System.out.println("Code: " + dept);
 						System.out.println("NumberA: " + numberA);
 						System.out.println("NumberB: " + numberB);
 						System.out.println("NumberC: " + numberC);
@@ -651,6 +671,7 @@ public class CourseList {
 						System.out.println("UnitsA: " + unitsA);
 						System.out.println("UnitsB: " + unitsB);
 						System.out.println("UnitsC: " + unitsC);
+						System.out.println("Max Units: " + maxUnits);
 						System.out.println("Description: " + description);
 						System.out.println("Offered in SpringA: " + springA);
 						System.out.println("Offered in SummerA: " + summerA);
@@ -662,11 +683,11 @@ public class CourseList {
 						System.out.println("Offered in SummerC: " + summerC);
 						System.out.println("Offered in FallC: " + fallC);
 						
-						deptList.add(new Course(code, numberA, name, unitsA, description, springA, summerA, fallA));
-						deptList.add(new Course(code, numberB, name, unitsB, description, springB, summerB, fallB));
-						deptList.add(new Course(code, numberC, name, unitsC, description, springC, summerC, fallC));
+						deptList.add(new Course(dept, numberA, name, unitsA, maxUnits, description, springA, summerA, fallA));
+						deptList.add(new Course(dept, numberB, name, unitsB, maxUnits, description, springB, summerB, fallB));
+						deptList.add(new Course(dept, numberC, name, unitsC, maxUnits, description, springC, summerC, fallC));
 					} else if (abz == true) {
-						System.out.println("Code: " + code);
+						System.out.println("Code: " + dept);
 						System.out.println("NumberA: " + numberA);
 						System.out.println("NumberB: " + numberB);
 						System.out.println("NumberZ: " + numberZ);
@@ -674,6 +695,7 @@ public class CourseList {
 						System.out.println("UnitsA: " + unitsA);
 						System.out.println("UnitsB: " + unitsB);
 						System.out.println("UnitsZ: " + unitsZ);
+						System.out.println("Max Units: " + maxUnits);
 						System.out.println("Description: " + description);
 						System.out.println("Offered in SpringA: " + springA);
 						System.out.println("Offered in SummerA: " + summerA);
@@ -685,16 +707,17 @@ public class CourseList {
 						System.out.println("Offered in SummerZ: " + summerZ);
 						System.out.println("Offered in FallZ: " + fallZ);
 						
-						deptList.add(new Course(code, numberA, name, unitsA, description, springA, summerA, fallA));
-						deptList.add(new Course(code, numberB, name, unitsB, description, springB, summerB, fallB));
-						deptList.add(new Course(code, numberZ, name, unitsZ, description, springZ, summerZ, fallZ));
+						deptList.add(new Course(dept, numberA, name, unitsA, maxUnits, description, springA, summerA, fallA));
+						deptList.add(new Course(dept, numberB, name, unitsB, maxUnits, description, springB, summerB, fallB));
+						deptList.add(new Course(dept, numberZ, name, unitsZ, maxUnits, description, springZ, summerZ, fallZ));
 					} else if (ab == true ) {
-						System.out.println("Code: " + code);
+						System.out.println("Code: " + dept);
 						System.out.println("NumberA: " + numberA);
 						System.out.println("NumberB: " + numberB);
 						System.out.println("Name: " + name);
 						System.out.println("UnitsA: " + unitsA);
 						System.out.println("UnitsB: " + unitsB);
+						System.out.println("Max Units: " + maxUnits);
 						System.out.println("Description: " + description);
 						System.out.println("Offered in SpringA: " + springA);
 						System.out.println("Offered in SummerA: " + summerA);
@@ -703,20 +726,21 @@ public class CourseList {
 						System.out.println("Offered in SummerB: " + summerB);
 						System.out.println("Offered in FallB: " + fallB);
 
-						deptList.add(new Course(code, numberA, name, unitsA, description, springA, summerA, fallA));
-						deptList.add(new Course(code, numberB, name, unitsB, description, springB, summerB, fallB));
+						deptList.add(new Course(dept, numberA, name, unitsA, maxUnits, description, springA, summerA, fallA));
+						deptList.add(new Course(dept, numberB, name, unitsB, maxUnits, description, springB, summerB, fallB));
 					
 					} else {
-						System.out.println("Code: " + code);
+						System.out.println("Code: " + dept);
 						System.out.println("Number: " + number);
 						System.out.println("Name: " + name);
 						System.out.println("Units: " + units);
+						System.out.println("Max Units: " + maxUnits);
 						System.out.println("Description: " + description);
 						System.out.println("Offered in Spring: " + spring);
 						System.out.println("Offered in Summer: " + summer);
 						System.out.println("Offered in Fall: " + fall);
 
-						deptList.add(new Course(code, number, name, units, description, spring, summer, fall));
+						deptList.add(new Course(dept, number, name, units, maxUnits, description, spring, summer, fall));
 					}
 				}
 			} catch (Exception e) {
@@ -728,10 +752,10 @@ public class CourseList {
 		}	
 		
 		try {
-			PrintStream out = new PrintStream(new FileOutputStream(code + ".txt"));
+			PrintStream out = new PrintStream(new FileOutputStream("output/" + dept + ".txt"));
 
 			for (Course c: deptList) {
-				out.println(c.getCode() + "|" + c.getNumber() + "|" + c.getName() + "|" + c.getUnits());
+				out.println(c.getDept() + "|" + c.getNumber() + "|" + c.getName() + "|" + c.getUnits());
 			}
 
 			out.close();
@@ -741,20 +765,20 @@ public class CourseList {
 		
 		if (errorList.size() > 0) {
 			try {
-				PrintStream out = new PrintStream(new FileOutputStream("error_" + code + ".txt"));
+				PrintStream out = new PrintStream(new FileOutputStream("output/error_" + dept + ".txt"));
 
 				for (String s : errorList) {
 					out.println(s);
 					out.println();
 				}
 
-				System.out.println("Error(s) outputted to error_" + code + ".txt");
+				System.out.println("Error(s) outputted to error_" + dept + ".txt");
 				
 				out.close();
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
 		}
-		System.out.println("Finished parsing... File outputted to " + code + ".txt");
+		System.out.println("Finished parsing... File outputted to " + dept + ".txt");
 	}
 }
