@@ -41,3 +41,8 @@ Desktop.ini
 ########
 *.log
 *.ctxt
+
+# Stick To The Plan output files and temp files #
+#################################################
+/ParseHTML/tmp
+/ParseHTML/output

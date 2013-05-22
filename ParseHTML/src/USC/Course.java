@@ -4,20 +4,22 @@ import java.util.*;
 
 public class Course {
 	
-	String dept;
-	String number;
-	String code;
-	String name;
-	int units;
+	String dept;	//Department only (example: CSCI)
+	String number;	//Number only (example: 101)
+	String code;	//Department and Number (example: CSCI 101)
+	String name;	//Full name of course (example: Fundamentals of Computer Programming)
 	
-	int maxUnits; 
+	double units;		//Number of Units
+	double maxUnits; 	//Max you can take per semester
+	double overallMax;	//Max number of units of a course you can take as part of degree. 
 	//For classes with a range of units and a maximum allowed units. 
 	//If there is no range, the max units should be the same as the units. 
 	
 	String description;
 	
-	ArrayList<Course> prerequisites;
-	ArrayList<Course> corequisites;
+	ArrayList<String> prerequisites;
+	ArrayList<String> corequisites;
+	String crosslist;
 	
 	Boolean spring;
 	Boolean summer;
@@ -26,7 +28,7 @@ public class Course {
 	//int[] offered; 	
 	// Spring = 1, Summer = 2, Fall = 3
 	
-	public Course(String _dept, String _number, String _name, int _units, int max, String desc, Boolean sp, Boolean sm, Boolean fa) {
+	public Course(String _dept, String _number, String _name, double _units, double max, double overall, String desc, Boolean sp, Boolean sm, Boolean fa) {
 		dept = _dept;
 		number = _number;
 		code = dept + " " + number;
@@ -35,9 +37,9 @@ public class Course {
 		description = desc;
 		
 		maxUnits = max;
-		
-		prerequisites = new ArrayList<Course>();
-		corequisites = new ArrayList<Course>();
+		overallMax = overall;
+		//prerequisites = new ArrayList<String>();
+		//corequisites = new ArrayList<String>();
 		
 		spring = sp;
 		summer = sm;
@@ -45,11 +47,13 @@ public class Course {
 	}
 
 	public String getDept() {
-		return code;
+		return dept;
 	}
 
 	public void setDept(String dept) {
 		this.dept = dept;
+		
+		this.code = dept + " " + this.number;
 	}
 
 	public String getNumber() {
@@ -58,8 +62,14 @@ public class Course {
 
 	public void setNumber(String number) {
 		this.number = number;
+		
+		this.code = this.dept + " " + number;
 	}
 
+	public String getCode() {
+		return code;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -68,14 +78,18 @@ public class Course {
 		this.name = name;
 	}
 
-	public int getUnits() {
+	public double getUnits() {
 		return units;
 	}
 
-	public void setUnits(int units) {
+	public void setUnits(double units) {
 		this.units = units;
 	}
 
+	public double getMaxUnits() {
+		return maxUnits;
+	}
+	
 	public Boolean getSpring() {
 		return spring;
 	}

@@ -1,0 +1,74 @@
+Need Fixing
+
+Description for multi-unit
+
+MUJZ 218ab Afro-Latin Percussion Instruments (2‚Äë2) Instruction in the performance of percussion instruments associated with African, South American, and Caribbean music traditions, with special emphasis on adaptation to jazz music. (Duplicates credit in former MUPF 218ab.)
+
+ACCT 599 Special Topics (1, 1.5, 2, or 3, max 6, FaSpSm) Examination of current literature and research techniques in contemporary accounting areas including tax, auditing and international accounting.
+
+CSCI 562 Empirical Methods in Natural Language Processing (3, 2 years, Fa) Acquiring computer-tractable linguistic knowledge has always been a bottleneck in building natural language systems. We will examine statistical techniques for extracting knowledge automatically from online text. Prerequisite: CSCI 561.
+
+----- Standard -----
+
+MATH 040x Basic Mathematical Skills (4, FaSp) Intensive review of arithmetic and algebra. Not available for degree credit. Graded CR/NC.
+
+--------------------
+
+----- minimum and maximum units ------
+
+MATH 390 Special Problems (1-4) Supervised, individual studies. No more than one registration permitted. Enrollment by petition only.
+
+MATH 395 Seminar in Problem Solving (2, max 8) Systematic approach to solving non-standard and competition level math problems on inequalities, infinite sums and products, combinatorics, number theory, and games. Recommended preparation: MATH 126.
+
+MATH 499 Special Topics (2-4, max 8) Lectures on advanced material not covered in regularly scheduled courses. No more than two registrations allowed.
+
+MATH 490x Directed Research (2-8, max 8, FaSpSm) Individual research and readings. Not available for graduate credit.
+
+MATH 613 Topics in Noncommutative Ring Theory (3, max 12) Jacobson radical, nil radical, nil rings and nil-potence, chain conditions, polynomial identity and group rings. Goldie theorems, current research. Prerequisite: MATH 510ab.
+
+MATH 530ab Stochastic Calculus and Mathematical Finance (a: 3, b: 3, Sp) a: Stochastic processes revisited, Brownian motion, Martingale theory, stochastic differential equations, Feynman-Kac formula, binomial models, basic concepts in arbitrage pricing theory, equivalent Martingale measure. (Duplicates credit in the former MATH 503.) Recommended preparation: MATH 225, MATH 407; b: Advanced topics in stochastic analysis, asset pricing in continuous time, stochastic control, Hamilton-Jacobi-Bellman equations, incomplete markets, American options, exotic options, term structure of interest rates. (Duplicates credit in the former MATH 506.)
+
+
+CTPR 240x Practicum in Production (2 or 4, Sm) Basic production techniques: introduction to the cinematic elements, production techniques, and equipment; film and/or videotape production. Not available for major credit to CTPR majors.
+
+CTPR 290 Cinematic Communication (4, 6, FaSpSm) Introduction to the interrelationship of visuals, sound, and editing in cinematic communication. Workshops in directing and producing. Individual and group projects. Open to School of Cinematic Arts students only. Recommended preparation for production majors: CTPR 285.
+
+CTPR 409 Practicum in Television Production (2, 4, max 8, FaSp) Television production laboratory course covers operating cameras, creating graphics, technical operations, controlling audio and floor-managing live productions. Students plan and produce actual Trojan Vision programs.
+
+CTPR 460 Film Business Procedures and Distribution (2 or 4, max 8, FaSpSm) Financing, budgeting, management as applied to films; problems of distribution, including merchandising, cataloging, evaluation, and film library management.
+
+CTPR 495 Internship in Cinematic Arts (1, 2 or 4, max 4, FaSpSm) On-the-job film, television and interactive industry experience in the areas of interest of the individual student. Requires departmental approval.
+
+
+ACCT 593 Independent Research in Accounting (.5-4, max 12, FaSpSm) Independent research beyond normal course offerings. Proposal, research and written report/paper required. Open only to master’s and doctoral students. Graded CR/NC.
+
+--------------------------------------
+
+----- ab unit pattern -----
+- with ab description and prerequisites separated. 
+MATH 425ab Fundamental Concepts of Analysis (a: 4, FaSp; b: 4, Sp) a: The real number system, metric spaces, limits, continuity, derivatives and integrals, infinite series. b: Implicit function theorems, Jacobians, transformations, multiple integrals, line integrals. Prerequisite: MATH 226; MATH 425a before MATH 425b.
+
+- description combined. 
+MATH 502ab Numerical Analysis (a: 3, Fa; b: 3, Sp) Computational linear algebra; solution of general nonlinear systems of equations; approximation theory using functional analysis; numerical solution of ordinary and partial differential equations. Prerequisite: MATH 425a and MATH 471.
+
+- one number for each letter
+
+MATH 594abz Master’s Thesis (2-2-0, FaSpSm) Credit on acceptance of thesis. Graded IP/CR/NC.
+
+ARCH 213ab Building Structures and Seismic Design (3-3, FaSp) a: Investigation and design of elements and systems for building structures; applied mechanics, strength of materials, structural investigation as a design tool. b: Investigation and design of structure systems: their resistance to seismic and wind forces and integration with architectural design for synergy of form and structure. Recommended preparation: PHYS 125 and MATH 108.
+
+ARCH 502azL Architectural Design V (6-0, FaSpSm) The final comprehensive architectural project under the guidance of a faculty adviser to demonstrate architectural knowledge, skills, and professional interests and goals. Graded IP/L. a: Prerequisite: ARCH 402aL; corequisite: ARCH 501; z: Prerequisite: ARCH 502a.
+
+CSCI 504ab Numerical Solutions of Ordinary and Partial Differential Equations (3) (Enroll in MATH 504ab)
+
+
+---------------------------
+
+ab, abz, abc, abcz, abcd, abcdz
+
+
+CSCI 529ab Advanced Game Projects (4-3, FaSp) a: Team projects intended to address the multifaceted technical and creative challenges that are inherent to comprehensive game development. Recommended preparation: CSCI 522 or CTIN 488. b: This course provides students in various areas of game specialization the practice of design, iterative stage 2 prototyping and development of a refined game.
+
+-----
+In ones that do not parse the number correctly: there is a special character inbetween causing problems (" "); (Example CSCI 200)
+-----
