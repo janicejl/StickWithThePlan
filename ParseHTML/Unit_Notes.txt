@@ -1,6 +1,10 @@
 Need Fixing
 
-Description for multi-unit
+PTE 582 Fluid Flow and Transport Processes in Porous Media (3, 2 years, Fa) Principles of single and multiphase flow through porous media; mechanisms of immiscible and miscible displacement; momentum, heat and mass transport in porous media.
+
+EE 436 Introduction to Condensed Matter Physics (4, Irregular, Sp) (Enroll in PHYS 440)
+
+
 
 MUJZ 218ab Afro-Latin Percussion Instruments (2‑2) Instruction in the performance of percussion instruments associated with African, South American, and Caribbean music traditions, with special emphasis on adaptation to jazz music. (Duplicates credit in former MUPF 218ab.)
 

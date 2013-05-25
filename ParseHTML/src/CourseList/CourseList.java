@@ -6,9 +6,13 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.File;
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.PrintStream;
 
 import java.util.ArrayList;
@@ -23,6 +27,31 @@ public class CourseList {
 
 		String url = "";
 
+		/**
+		 * For DepartmentList Parsing. 
+		 */
+		/*
+		File departmentList = new File("DepartmentList.txt");
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(departmentList));
+
+			while (br.ready()) {
+				url = br.readLine();
+
+				parseDepartment(url);
+			}
+
+			br.close();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		*/
+		
+		/**
+		 * For individual course testing. 
+		 */
+		
 		while (!url.equals("~")) {
 			System.out.println("Enter Department URL to parse, enter '~' to stop:  ");
 			url = in.nextLine();
@@ -37,7 +66,7 @@ public class CourseList {
 		Document doc = null;
 		
 		//IF NO INTERNET
-		File input = new File("tmp/PHED.html");
+		File input = new File("tmp/ACCT.html");
 		
 		System.out.println("Opening...");
 		
@@ -216,11 +245,26 @@ public class CourseList {
 
 					//Parse Name
 					if (nameFinished == false) {
-						if (name == "") {
-							name = split.get(i);
+						if (split.get(i).contains("Õ")) {	// Example: Master's	//replace with '
+							if (name != "") {
+								name = name + " ";
+							}
+							for (int j = 0; j < split.get(i).length(); j++) {
+								if (split.get(i).charAt(j) == 'Õ') {
+									name = name + "'";
+								} else {
+									name = name + split.get(i).charAt(j);
+								}
+							}
+
 						} else {
-							name = name + " " + split.get(i);
+							if (name == "") {
+								name = split.get(i);
+							} else {
+								name = name + " " + split.get(i);
+							}
 						}
+						
 						
 						if (split.get(i+1).equals("(a:") == true ) {
 							nameFinished = true;
