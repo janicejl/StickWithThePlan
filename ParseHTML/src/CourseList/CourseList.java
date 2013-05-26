@@ -66,7 +66,7 @@ public class CourseList {
 		Document doc = null;
 		
 		//IF NO INTERNET
-		File input = new File("tmp/ACCT.html");
+		File input = new File("tmp/MATH.html");
 		
 		System.out.println("Opening...");
 		

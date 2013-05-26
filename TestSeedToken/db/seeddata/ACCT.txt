@@ -1,0 +1,90 @@
+ACCT 370|External Financial Reporting Issues|4.0|4.0
+ACCT 371a|Introduction to Accounting Systems|2.0|2.0
+ACCT 371b|Introduction to Accounting Systems|2.0|2.0
+ACCT 372|Internal Reporting Issues|2.0|2.0
+ACCT 373|Introduction to Auditing and Assurance Services|2.0|2.0
+ACCT 374|Introduction to Tax Issues|2.0|2.0
+ACCT 390|Special Problems|1.0|4.0
+ACCT 410x|Foundations of Accounting|4.0|4.0
+ACCT 415x|Intermediate Financial Accounting for Non-Accounting Majors|4.0|4.0
+ACCT 416|Financial Reporting and Analysis|2.0|2.0
+ACCT 417|Advanced Financial Accounting for Non-Majors|2.0|2.0
+ACCT 418x|Accounting for Management Decisions|2.0|2.0
+ACCT 419x|Understanding Accounting Information Systems|2.0|2.0
+ACCT 420x|Understanding Income Tax|2.0|2.0
+ACCT 430|Accounting Ethics|4.0|4.0
+ACCT 462|Detecting Fraudulent Financial Reporting|2.0|2.0
+ACCT 463|Internal Audit|2.0|2.0
+ACCT 470a|Advanced External Financial Reporting Issues|2.0|2.0
+ACCT 470b|Advanced External Financial Reporting Issues|2.0|2.0
+ACCT 471|Accounting Information Systems|2.0|2.0
+ACCT 472|Managerial Accounting|2.0|2.0
+ACCT 473|Financial Statement Auditing|2.0|2.0
+ACCT 474|Tax Issues for Business|2.0|2.0
+ACCT 475|Systems Security and Audit|2.0|2.0
+ACCT 476|Performance Measurement Issues|2.0|2.0
+ACCT 478|Accounting Systems Design|4.0|4.0
+ACCT 479|Accounting Systems Development|4.0|4.0
+ACCT 490x|Directed Research|2.0|8.0
+ACCT 499|Special Topics|2.0|4.0
+ACCT 509|Concepts of Financial and Management Accounting|4.0|4.0
+ACCT 525x|Intensive Accounting Principles and Practices|1.0|1.0
+ACCT 530|Ethics for Professional Accountants|3.0|3.0
+ACCT 535|Management Accounting and Control Systems|3.0|3.0
+ACCT 536|Advanced Cost Analysis and Management Accounting|3.0|3.0
+ACCT 537|Performance Measurement, Evaluation, and Incentives|3.0|3.0
+ACCT 543|Introduction to Tax|3.0|3.0
+ACCT 544|Introduction to Strategic Tax Planning|3.0|3.0
+ACCT 546|Auditing and Assurance Services|3.0|3.0
+ACCT 547|Enterprise Information Systems|3.0|3.0
+ACCT 548|Enterprise Systems: Design, Implementation, Security and Audit|3.0|3.0
+ACCT 549|Advanced Enterprise Systems and Technologies|3.0|3.0
+ACCT 550T|Tax Research and Professional Responsibilities|3.0|3.0
+ACCT 551T|Taxation of Partnerships and S-Corps|3.0|3.0
+ACCT 552|Knowledge and Data Management|3.0|3.0
+ACCT 553T|Tax Policy and Strategic Tax Planning|3.0|3.0
+ACCT 555|Enterprise Resource Planning Systems|2.0|2.0
+ACCT 557|Advanced Financial Statement Auditing Topics|3.0|3.0
+ACCT 559|Strategy and Operations Through CFO Lens|3.0|3.0
+ACCT 560T|Tax Theory and Ethics|3.0|3.0
+ACCT 561T|Income Tax of Corporations and Their Shareholders|3.0|3.0
+ACCT 562|Methods and Motivations of Financial Reporting Fraud|1.0|1.0
+ACCT 563T|Federal Estate and Gift Taxes|3.0|3.0
+ACCT 567T|Taxation of Transactions in Property|3.0|3.0
+ACCT 568T|Taxation of Foreign Business Operations|3.0|3.0
+ACCT 569T|Advanced Partnership Taxation|3.0|3.0
+ACCT 570T|State and Local Tax Concepts|3.0|3.0
+ACCT 571T|Taxation of Individuals|3.0|3.0
+ACCT 572|Corporate Accounting and Reporting|3.0|3.0
+ACCT 573T|Federal Tax Procedure|3.0|3.0
+ACCT 574|Accounting in the Global Business Environment|3.0|3.0
+ACCT 575T|Taxation of Financial Markets|3.0|3.0
+ACCT 576T|Tax Consolidations|3.0|3.0
+ACCT 577T|Compensation|3.0|3.0
+ACCT 578T|Advanced Corporate Taxation|3.0|3.0
+ACCT 579T|Advanced International Taxation|3.0|3.0
+ACCT 580T|Tax Accounting Methods|3.0|3.0
+ACCT 581|Financial Statement Analysis|3.0|3.0
+ACCT 582|Accounting for Mergers and Acquisitions|3.0|3.0
+ACCT 583|Income Tax Accounting and Auditing|3.0|3.0
+ACCT 584|Family Wealth Preservation|3.0|3.0
+ACCT 585|Professional Responsibilities in Accounting|3.0|3.0
+ACCT 586|Financial Reporting Topics and Analysis for Tax Professionals|3.0|3.0
+ACCT 587|Forensic Accounting|3.0|3.0
+ACCT 588|Analysis and Implications of SEC Registration and Reporting|3.0|3.0
+ACCT 590|Directed Research|1.0|4.0
+ACCT 592|Field Research in Accounting|0.5|4.0
+ACCT 593|Independent Research in Accounting|0.5|4.0
+ACCT 595|Internship in Accounting|0.5|2.0
+ACCT 596|Research Practicum in Accounting|0.5|2.0
+ACCT 597|Consulting Project in Accounting|0.5|5.0
+ACCT 599|Special Topics|1.0|3.0
+ACCT 602|Survey of Judgment and Decision-Making Research in Accounting|3.0|3.0
+ACCT 604|Survey of Management Accounting Research|3.0|3.0
+ACCT 605|Survey of Financial Reporting Research|3.0|3.0
+ACCT 606|Survey of Tax Research|3.0|3.0
+ACCT 608|Positive Accounting Research|3.0|3.0
+ACCT 610|Survey of Accounting Research|3.0|3.0
+ACCT 611|Selected Topics in Accounting Research|1.0|1.0
+ACCT 661a|Accounting Research Methodology|2.0|2.0
+ACCT 661b|Accounting Research Methodology|2.0|2.0

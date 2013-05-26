@@ -1,0 +1,137 @@
+MATH 040x|Basic Mathematical Skills|4.0|4.0
+MATH 108|Precalculus|4.0|4.0
+MATH 116|Mathematics for the Social Sciences|4.0|4.0
+MATH 117|Introduction to Mathematics for Business and Economics|4.0|4.0
+MATH 118x|Fundamental Principles of the Calculus|4.0|4.0
+MATH 125|Calculus I|4.0|4.0
+MATH 126|Calculus II|4.0|4.0
+MATH 127|Enhanced Calculus I|4.0|4.0
+MATH 200|Elementary Mathematics from an Advanced Standpoint|4.0|4.0
+MATH 208x|Elementary Probability and Statistics|4.0|4.0
+MATH 218|Probability for Business|4.0|4.0
+MATH 225|Linear Algebra and Linear Differential Equations|4.0|4.0
+MATH 226|Calculus III|4.0|4.0
+MATH 227|Enhanced Calculus II|4.0|4.0
+MATH 245|Mathematics of Physics and Engineering I|4.0|4.0
+MATH 265|Mathematical and Computational Methods for Neuroscience|4.0|4.0
+MATH 307|Statistical Inference and Data Analysis I|4.0|4.0
+MATH 308|Statistical Inference and Data Analysis II|4.0|4.0
+MATH 370|Applied Algebra|4.0|4.0
+MATH 390|Special Problems|1.0|4.0
+MATH 395|Seminar in Problem Solving|2.0|2.0
+MATH 400|Foundations of Discrete Mathematics|4.0|4.0
+MATH 407|Probability Theory|4.0|4.0
+MATH 408|Mathematical Statistics|4.0|4.0
+MATH 410|Fundamental Concepts of Modern Algebra|4.0|4.0
+MATH 425a|Fundamental Concepts of Analysis|4.0|4.0
+MATH 425b|Fundamental Concepts of Analysis|4.0|4.0
+MATH 430|Theory of Numbers|4.0|4.0
+MATH 432|Applied Combinatorics|4.0|4.0
+MATH 434|Geometry and Transformations|4.0|4.0
+MATH 435|Vector Analysis and Introduction to Differential Geometry|4.0|4.0
+MATH 440|Topology|4.0|4.0
+MATH 445|Mathematics of Physics and Engineering II|4.0|4.0
+MATH 450|History of Mathematics|4.0|4.0
+MATH 458|Numerical Methods|4.0|4.0
+MATH 465|Ordinary Differential Equations|4.0|4.0
+MATH 466|Dynamic Modeling|4.0|4.0
+MATH 467|Theory and Computational Methods for Optimization|4.0|4.0
+MATH 471|Topics in Linear Algebra|4.0|4.0
+MATH 475|Introduction to Theory of Complex Variables|4.0|4.0
+MATH 490x|Directed Research|2.0|8.0
+MATH 499|Special Topics|2.0|4.0
+MATH 500|Graduate Colloquium|2.0|2.0
+MATH 501|Numerical Analysis and Computation|3.0|3.0
+MATH 502a|Numerical Analysis|3.0|3.0
+MATH 502b|Numerical Analysis|3.0|3.0
+MATH 504a|Numerical Solution of Ordinary and Partial Differential Equations|3.0|3.0
+MATH 504b|Numerical Solution of Ordinary and Partial Differential Equations|3.0|3.0
+MATH 505a|Applied Probability|3.0|3.0
+MATH 505b|Applied Probability|3.0|3.0
+MATH 507a|Theory of Probability|3.0|3.0
+MATH 507b|Theory of Probability|3.0|3.0
+MATH 508|Filtering Theory|3.0|3.0
+MATH 509|Stochastic Differential Equations|3.0|3.0
+MATH 510a|Algebra|3.0|3.0
+MATH 510b|Algebra|3.0|3.0
+MATH 511aL|Data Analysis|4.0|4.0
+MATH 511bL|Data Analysis|4.0|4.0
+MATH 512|Financial Informatics and Simulation (Computer Labs and Practitioner Seminar)|3.0|3.0
+MATH 520|Complex Analysis|3.0|3.0
+MATH 525a|Real Analysis|3.0|3.0
+MATH 525b|Real Analysis|3.0|3.0
+MATH 530a|Stochastic Calculus and Mathematical Finance|3.0|3.0
+MATH 530b|Stochastic Calculus and Mathematical Finance|3.0|3.0
+MATH 532|Combinatorial Analysis|3.0|3.0
+MATH 533|Combinatorial Analysis and Algebra|3.0|3.0
+MATH 535a|Differential Geometry|3.0|3.0
+MATH 535b|Differential Geometry|3.0|3.0
+MATH 540|Topology|3.0|3.0
+MATH 541a|Introduction to Mathematical Statistics|3.0|3.0
+MATH 541b|Introduction to Mathematical Statistics|3.0|3.0
+MATH 542L|Analysis of Variance and Design|3.0|3.0
+MATH 543L|Nonparametric Statistics|3.0|3.0
+MATH 544L|Multivariate Analysis|3.0|3.0
+MATH 545L|Introduction to Time Series|3.0|3.0
+MATH 546|Statistical Computing|3.0|3.0
+MATH 547|Methods of Statistical Inference|3.0|3.0
+MATH 548|Sequential Analysis|3.0|3.0
+MATH 550|Sample Surveys|3.0|3.0
+MATH 555a|Partial Differential Equations|3.0|3.0
+MATH 555b|Partial Differential Equations|3.0|3.0
+MATH 565a|Ordinary Differential Equations|3.0|3.0
+MATH 565b|Ordinary Differential Equations|3.0|3.0
+MATH 570a|Methods of Applied Mathematics|3.0|3.0
+MATH 570b|Methods of Applied Mathematics|3.0|3.0
+MATH 572|Applied Algebraic Structures|3.0|3.0
+MATH 574|Applied Matrix Analysis|3.0|3.0
+MATH 576|Applied Complex Analysis and Integral Transforms|3.0|3.0
+MATH 577a|Computational Molecular Biology Laboratory|2.0|2.0
+MATH 577b|Computational Molecular Biology Laboratory|2.0|2.0
+MATH 578a|Computational Molecular Biology|3.0|3.0
+MATH 578b|Computational Molecular Biology|3.0|3.0
+MATH 580|Introduction to Functional Analysis|3.0|3.0
+MATH 585|Mathematical Theory of Optimal Control|3.0|3.0
+MATH 590|Directed Research|1.0|12.0
+MATH 592|Computational Molecular Biology Internship|3.0|3.0
+MATH 593|Practicum in Teaching the Liberal Arts|2.0|2.0
+MATH 594a|Master's Thesis|2.0|2.0
+MATH 594b|Master's Thesis|2.0|2.0
+MATH 594z|Master's Thesis|0.0|0.0
+MATH 599|Special Topics|2.0|4.0
+MATH 600|Topics in Numerical Analysis|3.0|3.0
+MATH 601|Optimization Theory and Techniques|3.0|3.0
+MATH 602|Galerkin Approximation Methods in Partial Differential Equations|3.0|3.0
+MATH 605|Topics in Probability|3.0|3.0
+MATH 606|Topics in Stochastic Processes|3.0|3.0
+MATH 610|Topics in Algebra|3.0|3.0
+MATH 612|Topics in Commutative Ring Theory|3.0|3.0
+MATH 613|Topics in Noncommutative Ring Theory|3.0|3.0
+MATH 620|Topics in Complex Analysis|3.0|3.0
+MATH 625|Topics in Real Analysis|3.0|3.0
+MATH 630|Topics in Number Theory|3.0|3.0
+MATH 635|Topics in Differential Geometry|3.0|3.0
+MATH 641|Topics in Topology|3.0|3.0
+MATH 650|Seminar in Statistical Consulting|3.0|3.0
+MATH 655|Topics in Partial Differential Equations|3.0|3.0
+MATH 665|Topics in Ordinary Differential Equations|3.0|3.0
+MATH 680|Nonlinear Functional Analysis|3.0|3.0
+MATH 681|Selected Topics in Functional Analysis|3.0|3.0
+MATH 685|Topics in Mathematical Control Theory|3.0|3.0
+MATH 689|Topics in Mathematical Physics|3.0|3.0
+MATH 700|Seminar in Numerical Analysis|3.0|3.0
+MATH 705|Seminar in Probability|3.0|3.0
+MATH 710|Seminar in Algebra|3.0|3.0
+MATH 725|Seminar in Analysis|3.0|3.0
+MATH 730|Seminar in Number Theory|3.0|3.0
+MATH 735|Seminar in Differential Geometry|3.0|3.0
+MATH 740|Seminar in Topology|3.0|3.0
+MATH 761|Seminar in Programming and Computability|3.0|3.0
+MATH 765|Seminar in Ordinary Differential Equations|3.0|3.0
+MATH 780|Seminar in Functional Analysis|3.0|3.0
+MATH 790|Research|1.0|12.0
+MATH 794a|Doctoral Dissertation|2.0|2.0
+MATH 794b|Doctoral Dissertation|2.0|2.0
+MATH 794c|Doctoral Dissertation|2.0|2.0
+MATH 794d|Doctoral Dissertation|2.0|2.0
+MATH 794z|Doctoral Dissertation|0.0|0.0

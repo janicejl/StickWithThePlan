@@ -1,0 +1,147 @@
+CTPR 240x|Practicum in Production|2.0|4.0
+CTPR 241|Fundamentals of Cinema Technique|2.0|2.0
+CTPR 242|Fundamentals of Cinematic Sound|2.0|2.0
+CTPR 280|Structure of the Moving Image|2.0|2.0
+CTPR 285|Lateral Thinking for Filmmaking Practice|2.0|2.0
+CTPR 288|Originating and Developing Ideas for Film|2.0|2.0
+CTPR 290|Cinematic Communication|4.0|6.0
+CTPR 290|Cinematic Communication|4.0|6.0
+CTPR 294|Directing in Television, Fiction, and Documentary|4.0|4.0
+CTPR 295L|Cinematic Arts Laboratory|4.0|4.0
+CTPR 301|Creating the Non-Fiction Film|4.0|4.0
+CTPR 310|Intermediate Film Production|4.0|4.0
+CTPR 310|Intermediate Production|4.0|6.0
+CTPR 319|Directing for Writers: Fundamentals|2.0|2.0
+CTPR 327|Motion Picture Camera|3.0|3.0
+CTPR 335|Motion Picture Editing|3.0|3.0
+CTPR 340|Motion Picture Sound Editing|2.0|2.0
+CTPR 371|Directing for Television|4.0|4.0
+CTPR 375|Functions of a Director|4.0|4.0
+CTPR 376|Intermediate Cinematography|4.0|4.0
+CTPR 382|Advanced Multi-Camera Television Comedy Pilot|4.0|4.0
+CTPR 385|Colloquium: Motion Picture Production Techniques|4.0|4.0
+CTPR 386|Art and Industry of the Theatrical Film|4.0|4.0
+CTPR 405|Filmic Expression|4.0|4.0
+CTPR 409|Practicum in Television Production|2.0|4.0
+CTPR 410|The Movie Business: From Story Concept to Exhibition|2.0|2.0
+CTPR 419|Directing for Writers: Intermediate|2.0|2.0
+CTPR 421|Intermediate Motion Picture Editing|3.0|3.0
+CTPR 421|Practicum in Editing|2.0|2.0
+CTPR 422|Makeup for Motion Pictures|2.0|2.0
+CTPR 423|Introduction to Special Effects in Cinema|2.0|2.0
+CTPR 424|Practicum in Cinematography|4.0|4.0
+CTPR 424|Practicum in Cinematography|2.0|2.0
+CTPR 425|Production Planning|2.0|2.0
+CTPR 426|The Production Experience|2.0|2.0
+CTPR 427|Introduction to Color Correction|2.0|2.0
+CTPR 428|Summer Production Workshop|2.0|4.0
+CTPR 436|Editing for Writers|2.0|2.0
+CTPR 438|Practicum in Producing|2.0|2.0
+CTPR 439|Seminar in Computer Editing|2.0|2.0
+CTPR 440|Practicum in Sound|2.0|2.0
+CTPR 444|Still Photography: Color, Black and White, Film, and Digital|4.0|4.0
+CTPR 450|The Production and Post-Production Assistant|2.0|2.0
+CTPR 451|Guerrilla Television|2.0|2.0
+CTPR 452|Independent Video Production|2.0|2.0
+CTPR 453|Personal Voice: Documentary/Experimental Production|4.0|4.0
+CTPR 454|Acting for Film and Television|4.0|4.0
+CTPR 455|Introduction to Production Design|2.0|2.0
+CTPR 456|Introduction to Art Direction|2.0|2.0
+CTPR 457|Creating Poetic Cinema|2.0|2.0
+CTPR 458|Organizing Creativity: Entertainment Industry Decision Making|2.0|2.0
+CTPR 460|Film Business Procedures and Distribution|2.0|4.0
+CTPR 461|Managing Television Stations and Internet Media|2.0|2.0
+CTPR 465|Practicum in Production Design|2.0|2.0
+CTPR 466|The Art of the Pitch|2.0|2.0
+CTPR 468|The Film Makers|4.0|4.0
+CTPR 470|Practicum in On-screen Direction of Actors|4.0|4.0
+CTPR 472|Non-Theatrical Aspects of Film and TV Producing|2.0|2.0
+CTPR 473|Directing the Composer|2.0|2.0
+CTPR 474|Documentary Production|4.0|4.0
+CTPR 475|Directing: Mise-en-Scene|4.0|4.0
+CTPR 476|Directing The Comedic Scene|2.0|2.0
+CTPR 477|Special Problems in Directing|2.0|4.0
+CTPR 478|Practicum in Directing|2.0|2.0
+CTPR 479|Single Camera Television Dramatic Pilot|2.0|2.0
+CTPR 480|Production Workshop I|4.0|4.0
+CTPR 480|Advanced Production Workshop|4.0|4.0
+CTPR 481aL|Cinema Workshop|2.0|2.0
+CTPR 481bL|Cinema Workshop|2.0|2.0
+CTPR 484|Advanced Multi-Camera Television Workshop|4.0|4.0
+CTPR 485|Production Workshop II|4.0|4.0
+CTPR 486|Single Camera Television Dramatic Series|4.0|4.0
+CTPR 486|Single Camera Television Dramatic Series|4.0|4.0
+CTPR 487|The Recording Studio in Film and Video Production|2.0|2.0
+CTPR 489|Television Docudrama Production|4.0|4.0
+CTPR 493|Senior Television Seminar|2.0|4.0
+CTPR 495|Internship in Cinematic Arts|1.0|1.0
+CTPR 496|The Film Industry: Career Challenges and Choices for Women|2.0|2.0
+CTPR 497|Music Video Production|2.0|2.0
+CTPR 499|Special Topics|2.0|4.0
+CTPR 504|Fundamentals of Production|4.0|4.0
+CTPR 506|Visual Expression|2.0|2.0
+CTPR 507|Production I|4.0|4.0
+CTPR 508|Production II|6.0|6.0
+CTPR 509|Concepts of Cinematic Post Production Ð Editing and Sound|2.0|2.0
+CTPR 510|Concepts of Cinematic Production|2.0|2.0
+CTPR 515|Global Exchange Workshop|2.0|2.0
+CTPR 522|Reality Television Survey|2.0|2.0
+CTPR 523|Introduction to Multiple-Camera Production|2.0|2.0
+CTPR 527|Special Effects in Cinema|2.0|4.0
+CTPR 530|Producing for Independent Films|2.0|2.0
+CTPR 531|Planning the Production|2.0|2.0
+CTPR 532|Intermediate Directing|2.0|2.0
+CTPR 533|Directing Techniques|2.0|2.0
+CTPR 534|Intermediate Production Design|2.0|2.0
+CTPR 535|Intermediate Editing|2.0|2.0
+CTPR 536|Editing for Scriptwriters|2.0|2.0
+CTPR 537|Intermediate Cinematography|2.0|2.0
+CTPR 538|Intermediate Producing|2.0|2.0
+CTPR 539|Intermediate Graphics|2.0|2.0
+CTPR 540|Intermediate Sound|2.0|2.0
+CTPR 542|Intermediate Electronic Imaging|2.0|2.0
+CTPR 543|Editing the Advanced Project|2.0|2.0
+CTPR 545|Intermediate Multi-Camera Television Workshop|4.0|4.0
+CTPR 546L|Production III, Fiction|6.0|6.0
+CTPR 547L|Production III, Documentary|6.0|6.0
+CTPR 552|Advanced Directing|2.0|2.0
+CTPR 553|Developing the Advanced Project|1.0|1.0
+CTPR 554|Advanced Sound|2.0|2.0
+CTPR 555|Advanced Production Design|2.0|2.0
+CTPR 556|Advanced Editing|2.0|2.0
+CTPR 557|Advanced Cinematography|2.0|2.0
+CTPR 558|Advanced Producing|2.0|2.0
+CTPR 559|Advanced Graphics|2.0|2.0
+CTPR 560|Seminar in Motion Picture Distribution, Budgeting, and Management|2.0|4.0
+CTPR 561|Publicity for Cinema and Television|4.0|4.0
+CTPR 562|Seminar in Motion Picture Business|2.0|4.0
+CTPR 563|The Business of Representation|4.0|4.0
+CTPR 566|Developing and Selling Your Film and TV Projects|2.0|2.0
+CTPR 568|Advanced Electronic Imaging|2.0|2.0
+CTPR 570|Studies in the Functions of a Director|2.0|2.0
+CTPR 572|The World of Television: From Concept to Air and Everything in Between|2.0|2.0
+CTPR 573|Producing the Advanced Project|1.0|1.0
+CTPR 575a|Directing for Writers|2.0|2.0
+CTPR 575b|Directing for Writers|4.0|4.0
+CTPR 581a|Individual Production Workshop|4.0|4.0
+CTPR 581b|Individual Production Workshop|2.0|2.0
+CTPR 581c|Individual Production Workshop|2.0|2.0
+CTPR 581z|Individual Production Workshop|0.0|0.0
+CTPR 582a|Advanced Production Seminar|2.0|2.0
+CTPR 582b|Advanced Production Seminar|2.0|2.0
+CTPR 582z|Advanced Production Seminar|0.0|0.0
+CTPR 583|Graduate Television Production|6.0|6.0
+CTPR 585a|Advanced Producing Project|2.0|2.0
+CTPR 585b|Advanced Producing Project|2.0|2.0
+CTPR 585z|Advanced Producing Project|0.0|0.0
+CTPR 586a|Production IV|6.0|6.0
+CTPR 586b|Production IV|0.0|0.0
+CTPR 586z|Production IV|0.0|0.0
+CTPR 587a|Group Production Workshop|4.0|4.0
+CTPR 587b|Group Production Workshop|2.0|2.0
+CTPR 587c|Group Production Workshop|2.0|2.0
+CTPR 587z|Group Production Workshop|0.0|0.0
+CTPR 594a|Master's Thesis|2.0|2.0
+CTPR 594b|Master's Thesis|2.0|2.0
+CTPR 594z|Master's Thesis|0.0|0.0
+CTPR 599|Special Topics|2.0|4.0
