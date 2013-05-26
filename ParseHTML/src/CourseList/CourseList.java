@@ -11,8 +11,6 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.PrintStream;
 
 import java.util.ArrayList;
@@ -66,7 +64,7 @@ public class CourseList {
 		Document doc = null;
 		
 		//IF NO INTERNET
-		File input = new File("tmp/MATH.html");
+		File input = new File("tmp/CTPR.html");
 		
 		System.out.println("Opening...");
 		
@@ -245,13 +243,15 @@ public class CourseList {
 
 					//Parse Name
 					if (nameFinished == false) {
-						if (split.get(i).contains("Õ")) {	// Example: Master's	//replace with '
+						if (split.get(i).contains("Õ") || split.get(i).contains("Ð")) {	// Example: Master's	//replace with '
 							if (name != "") {
 								name = name + " ";
 							}
 							for (int j = 0; j < split.get(i).length(); j++) {
 								if (split.get(i).charAt(j) == 'Õ') {
 									name = name + "'";
+								} else if (split.get(i).charAt(j) == 'Ð') {
+									name = name + "-";
 								} else {
 									name = name + split.get(i).charAt(j);
 								}

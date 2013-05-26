@@ -82,7 +82,7 @@ CTPR 504|Fundamentals of Production|4.0|4.0
 CTPR 506|Visual Expression|2.0|2.0
 CTPR 507|Production I|4.0|4.0
 CTPR 508|Production II|6.0|6.0
-CTPR 509|Concepts of Cinematic Post Production Ð Editing and Sound|2.0|2.0
+CTPR 509|Concepts of Cinematic Post Production - Editing and Sound|2.0|2.0
 CTPR 510|Concepts of Cinematic Production|2.0|2.0
 CTPR 515|Global Exchange Workshop|2.0|2.0
 CTPR 522|Reality Television Survey|2.0|2.0
