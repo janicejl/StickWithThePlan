@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Year:</b>
+  <%= @semester.year %>
+</p>
+
+<p>
+  <b>Term:</b>
+  <%= @semester.term %>
+</p>
+
+<p>
+  <b>Units:</b>
+  <%= @semester.units %>
+</p>
+
+<p>
+  <b>Maximum:</b>
+  <%= @semester.maximum %>
+</p>
+
+
+<%= link_to 'Edit', edit_semester_path(@semester) %> |
+<%= link_to 'Back', semesters_path %>

@@ -2,11 +2,11 @@ class CoursesController < ApplicationController
   # GET /courses
   # GET /courses.json
   def index
-    @courses = Course.all
+    @courses = Course.where("name like ?", "%#{params[:q]}%")
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @courses }
+      format.json { render json: @courses.map(&:attributes) }
     end
   end
 

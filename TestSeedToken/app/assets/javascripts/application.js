@@ -12,4 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap.min
+//= require jquery.tokeninput
 //= require_tree .
+
+$(function() {
+	$("#semester_lesson_tokens").tokenInput("/courses.json", {
+		crossDomain: false,
+		prePopulate: $("#semester_lesson_tokens").data("pre")
+	});
+});

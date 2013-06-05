@@ -1,4 +1,10 @@
 TestSeedToken::Application.routes.draw do
+  resources :lessons
+
+
+  resources :semesters
+
+
   resources :courses
 
 

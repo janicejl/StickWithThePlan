@@ -1,0 +1,29 @@
+<h1>Listing semesters</h1>
+
+<table>
+  <tr>
+    <th>Year</th>
+    <th>Term</th>
+    <th>Units</th>
+    <th>Maximum</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @semesters.each do |semester| %>
+  <tr>
+    <td><%= semester.year %></td>
+    <td><%= semester.term %></td>
+    <td><%= semester.units %></td>
+    <td><%= semester.maximum %></td>
+    <td><%= link_to 'Show', semester %></td>
+    <td><%= link_to 'Edit', edit_semester_path(semester) %></td>
+    <td><%= link_to 'Destroy', semester, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Semester', new_semester_path %>

@@ -13,13 +13,14 @@ Dir.foreach("#{Rails.root}/db/seeddata") do |department|
 
 	file = File.open("#{Rails.root}/db/seeddata/" + department);
 	file.read.each_line do |line|
-		code, name, units, max_units = line.chomp.split("|")
+		code, title, units, max_units = line.chomp.split("|")
 		#puts code
 		#puts name
 		#puts units
 		#puts max_units
+		name = code + " - " + title + " (" + units + ")"
 
-		Course.find_or_create_by_code!(:code => code, :name => name, :units => units, :max_units => max_units)
+		Course.find_or_create_by_code!(:code => code, :title => title, :name => name, :units => units, :max_units => max_units)
 	end
 end
 
