@@ -20,6 +20,15 @@
   <%= @semester.maximum %>
 </p>
 
+<p>
+  <b>Courses:</b>
+  <ul>
+    <% for course in @semester.courses %>
+      <li><%=course.name%></li>
+    <% end %>
+  </ul>
+</p>
+
 
 <%= link_to 'Edit', edit_semester_path(@semester) %> |
 <%= link_to 'Back', semesters_path %>
