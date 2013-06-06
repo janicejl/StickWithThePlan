@@ -64,7 +64,7 @@ public class CourseList {
 		Document doc = null;
 		
 		//IF NO INTERNET
-		File input = new File("tmp/CTPR.html");
+		File input = new File("tmp/EE.html");
 		
 		System.out.println("Opening...");
 		
@@ -555,6 +555,10 @@ public class CourseList {
 							i++; 
 							while (true) {
 								if (split.get(i).charAt(split.get(i).length()-1) == ')') {
+									break;
+								}
+								
+								if (split.get(i).equals("Irregular,")) {
 									break;
 								}
 								
