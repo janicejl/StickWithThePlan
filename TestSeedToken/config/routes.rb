@@ -1,4 +1,7 @@
 TestSeedToken::Application.routes.draw do
+  resources :plans
+
+
   resources :lessons
 
 

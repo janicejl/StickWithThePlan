@@ -16,9 +16,23 @@
 //= require jquery.tokeninput
 //= require_tree .
 
+/*
 $(function() {
 	$("#semester_lesson_tokens").tokenInput("/courses.json", {
 		crossDomain: false,
 		prePopulate: $("#semester_lesson_tokens").data("pre")
 	});
 });
+*/
+
+
+$(function() {
+	$(".lesson_tokens").each(function() {
+    $(this).tokenInput("/courses.json", {
+      crossDomain: false, 
+      prePopulate: $(this).data("pre")
+    });
+  });
+});
+
+

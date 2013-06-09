@@ -4,6 +4,8 @@ class Semester < ActiveRecord::Base
   has_many :lessons
   has_many :courses, :through => :lessons
 
+  belongs_to :plan
+
   attr_reader :lesson_tokens
 
   def lesson_tokens=(ids) 
