@@ -5,16 +5,18 @@
   <%= @plan.name %>
 </p>
 
+
+<% for semester in @plan.semesters %>
 <p>
-  <% for semester in @plan.semesters %>
-    <b>Semester: <%= semester.term %> </b>
-    <ul>
-      <% for course in semester.courses %>
-        <li><%= course.name %> </li>
-      <% end %>
-    </ul>
-   <% end %> 
+  <b>Semester: <%= semester.term %> </b>
+  <ul>
+    <% for course in semester.courses %>
+      <li><%= course.name %> </li>
+    <% end %>
+  </ul>
 </p>
+ <% end %> 
+
 
 <%= link_to 'Edit', edit_plan_path(@plan) %> |
 <%= link_to 'Back', plans_path %>
