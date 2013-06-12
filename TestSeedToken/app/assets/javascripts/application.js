@@ -16,16 +16,16 @@
 //= require jquery.tokeninput
 //= require_tree .
 
-/*
+// For Semesters/new
 $(function() {
 	$("#semester_lesson_tokens").tokenInput("/courses.json", {
 		crossDomain: false,
 		prePopulate: $("#semester_lesson_tokens").data("pre")
 	});
 });
-*/
 
 
+// For Plans/new
 $(function() {
 	$(".lesson_tokens").each(function() {
     $(this).tokenInput("/courses.json", {
@@ -35,4 +35,19 @@ $(function() {
   });
 });
 
+// For remove fields link
+function remove_fields(link) {
+  $(link).prev("input[type=hidden]").val("1");
+  $(link).closest(".fields").hide();
+}
 
+// For add fields link
+function add_fields(link, association, content) {
+  var new_id = new Date().getTime();
+  var regexp = new RegExp("new_" + association, "g");
+  $(link).parent().before(content.replace(regexp, new_id));
+  //add javascript call to .tokenInput. 
+  $('.lesson_tokens:last').tokenInput("/courses.json", {
+    crossDomain: false
+  });
+}

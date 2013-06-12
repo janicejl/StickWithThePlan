@@ -1,0 +1,11 @@
+<div class="fields">
+	<div class="field">
+	  <%= f.label :term %>
+	  <%= f.text_field :term %>
+    <%= link_to_remove_fields "remove", f %>
+	</div>
+	<div class="field">
+	  <%= f.label :lesson_tokens, "Courses" %>
+	  <%= f.text_field :lesson_tokens, :class => "lesson_tokens", "data-pre" => f.object.courses.to_json(:only => [:id, :name]) %>
+	</div>
+</div>

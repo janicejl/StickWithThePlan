@@ -17,16 +17,10 @@
   </div>
 
   <%= f.fields_for :semesters do |builder| %>
-    <div class="field">
-      <%= builder.label :term %>
-      <%= builder.text_field :term %>
-    </div>
-    <div class="field">
-      <%= builder.label :lesson_tokens, "Semester" %>
-      <%= builder.text_field :lesson_tokens, :class => "lesson_tokens", "data-pre" => builder.object.courses.to_json(:only => [:id, :name]) %>
-    </div>
+    <%= render "semester_fields", :f => builder %>
   <% end %>
 
+  <div><%= link_to_add_fields "Add Semester", f, :semesters %></div>
 
   <div class="actions">
     <%= f.submit %>
